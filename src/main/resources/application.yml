@@ -1,0 +1,12 @@
+server:
+  port: 8088
+
+# \u7535\u6869\u4E8C\u7EF4\u7801\u914D\u7F6E
+pile:
+  connector:
+    qr-code:
+      base-text: 'https://yjzz.fzggw.zj.gov.cn/zlc/qrcode?code=${GunCode}'
+      icon-path: 'classpath:qr-code-icon/icon_right_angle_1280x1280.png'
+      height: 400
+      width: 400
+      test: on
