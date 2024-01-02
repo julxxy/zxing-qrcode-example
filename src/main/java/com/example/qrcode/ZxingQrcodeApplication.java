@@ -9,10 +9,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @author weasley
  */
 @SpringBootApplication
-public class ZxingQrcodeExampleApplication {
+public class ZxingQrcodeApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ZxingQrcodeExampleApplication.class, args);
+        SpringApplication.run(ZxingQrcodeApplication.class, args);
     }
 
 }
