@@ -30,5 +30,10 @@ public class GitCommitHistory {
         System.out.println("test4");
     }
 
+    @Test
+    void test5() {
+        System.out.println("test5");
+    }
+
 
 }
