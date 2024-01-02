@@ -1,24 +1,22 @@
-# 谷歌 Zxing 生成二维码示例
+# Google Zxing 二维码生成
 
-> 我的代码在本地运行的好好的，部署到服务器上就不行了？
+本项目使用 Google 的 Zxing 库生成二维码图片，有效解决了在服务器环境中二维码图片中汉字乱码和马赛克的问题。
 
-## 1 彻底解决QRCode图片中中文乱码问题
+## 1. 完全解决 QRCode 图片中的中文乱码问题
 
-通过加载加载 `classpath` 下的字体屏蔽服务器间的字体差异，大部`ECS`
-厂商都有严格系统的习惯！所以我们使用字体外挂的方式整合到项目中进行使用，本次使用[小米开源字体-MiSans-Medium.ttf](https://hyperos.mi.com/font/zh/)
-做演示
+通过加载 `classpath` 下的字体，我们可以消除服务器间的字体差异。大部分 `ECS`
+厂商都有严格的系统习惯，因此我们采用字体外挂的方式将其整合到项目中。本项目使用 [小米开源字体-MiSans-Medium.ttf](https://hyperos.mi.com/font/zh/)
+进行演示。
 
-代码见：`com.example.qrcode.config.QRCodeExtraConfig`
+相关代码请参见：`com.example.qrcode.config.QRCodeExtraConfig`
 
-## 2 解决服务器环境下QRCode图片中中文的锯齿感强烈
+## 2. 解决服务器环境下 QRCode 图片中的中文锯齿感
 
-代码：`com.example.qrcode.core.QRCodeGenerator`
+相关代码请参见：`com.example.qrcode.core.QRCodeGenerator`
 
-## 3 项目启动环境
+## 3. 项目启动环境
 
 | 环境名         | 版本       | 备注 |
 |-------------|----------|----|
-| JDK         | >=  21   |    |
-| Spring-Boot | >= 3.x.x |    |
-|             |          |    |
-
+| JDK         | >=  1.8  |    |
+| Spring-Boot | >= 2.3.x |    |

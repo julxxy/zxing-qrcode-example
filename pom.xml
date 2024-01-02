@@ -13,7 +13,7 @@
     <artifactId>zxing-qrcode-example</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <name>zxing-qrcode-example</name>
-    <description>zxing-qrcode-example</description>
+    <description>使用谷歌的 Zxing 库生成二维码图片，在服务器环境中解决了二维码图片中汉字乱码和字体马赛克问题</description>
 
     <properties>
         <java.version>21</java.version>
